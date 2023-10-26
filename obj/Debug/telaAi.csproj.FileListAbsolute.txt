@@ -1,0 +1,11 @@
+C:\Users\2021102020058\source\repos\telaAi\bin\Debug\telaAi.exe.config
+C:\Users\2021102020058\source\repos\telaAi\bin\Debug\telaAi.exe
+C:\Users\2021102020058\source\repos\telaAi\bin\Debug\telaAi.pdb
+C:\Users\2021102020058\source\repos\telaAi\obj\Debug\telaAi.csproj.AssemblyReference.cache
+C:\Users\2021102020058\source\repos\telaAi\obj\Debug\telaAi.csproj.SuggestedBindingRedirects.cache
+C:\Users\2021102020058\source\repos\telaAi\obj\Debug\telaAi.Form1.resources
+C:\Users\2021102020058\source\repos\telaAi\obj\Debug\telaAi.Properties.Resources.resources
+C:\Users\2021102020058\source\repos\telaAi\obj\Debug\telaAi.csproj.GenerateResource.cache
+C:\Users\2021102020058\source\repos\telaAi\obj\Debug\telaAi.csproj.CoreCompileInputs.cache
+C:\Users\2021102020058\source\repos\telaAi\obj\Debug\telaAi.exe
+C:\Users\2021102020058\source\repos\telaAi\obj\Debug\telaAi.pdb
