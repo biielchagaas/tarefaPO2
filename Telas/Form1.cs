@@ -70,6 +70,14 @@ namespace telaAi
                     MessageBox.Show("Salvo");
                     this.Dispose();
                 }
+                if (!cpfValido)
+                {
+                    MessageBox.Show("Por favor, insira um CPF valido!!!");
+                }
+                if (!emailValido)
+                {
+                    MessageBox.Show("Por favor, insira um E-Mail valido!!!");
+                }
             }
         }
 
@@ -146,7 +154,7 @@ namespace telaAi
 
         private void tb_cidade_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (!char.IsLetter(e.KeyChar) && e.KeyChar != (char)Keys.Back && e.KeyChar != (char)Keys.Space)
+            if (!char.IsLetter(e.KeyChar) && e.KeyChar != (char)Keys.Back && e.KeyChar != (char)Keys.Space && e.KeyChar != (char)Keys.Subtract)
             {
                 e.Handled = true;
             }
