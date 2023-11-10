@@ -70,6 +70,7 @@
             this.tb_estCiv.BackColor = System.Drawing.SystemColors.WindowFrame;
             this.tb_estCiv.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tb_estCiv.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_estCiv.ForeColor = System.Drawing.SystemColors.Control;
             this.tb_estCiv.Location = new System.Drawing.Point(279, 52);
             this.tb_estCiv.Name = "tb_estCiv";
             this.tb_estCiv.Size = new System.Drawing.Size(100, 19);
@@ -81,7 +82,8 @@
             this.tb_nome.BackColor = System.Drawing.SystemColors.WindowFrame;
             this.tb_nome.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tb_nome.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.tb_nome.Location = new System.Drawing.Point(17, 113);
+            this.tb_nome.ForeColor = System.Drawing.SystemColors.Control;
+            this.tb_nome.Location = new System.Drawing.Point(17, 115);
             this.tb_nome.Name = "tb_nome";
             this.tb_nome.Size = new System.Drawing.Size(361, 19);
             this.tb_nome.TabIndex = 3;
@@ -102,6 +104,7 @@
             this.tb_email.BackColor = System.Drawing.SystemColors.WindowFrame;
             this.tb_email.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tb_email.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.tb_email.ForeColor = System.Drawing.SystemColors.Control;
             this.tb_email.Location = new System.Drawing.Point(17, 176);
             this.tb_email.Name = "tb_email";
             this.tb_email.Size = new System.Drawing.Size(361, 19);
@@ -112,6 +115,7 @@
             this.tb_funcao.BackColor = System.Drawing.SystemColors.WindowFrame;
             this.tb_funcao.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tb_funcao.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_funcao.ForeColor = System.Drawing.SystemColors.Control;
             this.tb_funcao.Location = new System.Drawing.Point(17, 361);
             this.tb_funcao.Name = "tb_funcao";
             this.tb_funcao.Size = new System.Drawing.Size(100, 19);
@@ -133,6 +137,7 @@
             this.tb_estado.BackColor = System.Drawing.SystemColors.WindowFrame;
             this.tb_estado.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tb_estado.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_estado.ForeColor = System.Drawing.SystemColors.Control;
             this.tb_estado.Location = new System.Drawing.Point(278, 300);
             this.tb_estado.Name = "tb_estado";
             this.tb_estado.Size = new System.Drawing.Size(100, 19);
@@ -144,6 +149,7 @@
             this.tb_cidade.BackColor = System.Drawing.SystemColors.WindowFrame;
             this.tb_cidade.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tb_cidade.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_cidade.ForeColor = System.Drawing.SystemColors.Control;
             this.tb_cidade.Location = new System.Drawing.Point(146, 300);
             this.tb_cidade.Name = "tb_cidade";
             this.tb_cidade.Size = new System.Drawing.Size(100, 19);
@@ -155,6 +161,7 @@
             this.tb_endereco.BackColor = System.Drawing.SystemColors.WindowFrame;
             this.tb_endereco.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tb_endereco.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_endereco.ForeColor = System.Drawing.SystemColors.Control;
             this.tb_endereco.Location = new System.Drawing.Point(17, 300);
             this.tb_endereco.Name = "tb_endereco";
             this.tb_endereco.Size = new System.Drawing.Size(100, 19);
@@ -188,6 +195,7 @@
             this.mtb_cpf.BackColor = System.Drawing.SystemColors.WindowFrame;
             this.mtb_cpf.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.mtb_cpf.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mtb_cpf.ForeColor = System.Drawing.SystemColors.Control;
             this.mtb_cpf.Location = new System.Drawing.Point(17, 239);
             this.mtb_cpf.Mask = "000,000,000-00";
             this.mtb_cpf.Name = "mtb_cpf";
@@ -209,6 +217,7 @@
             this.mtb_nasc.BackColor = System.Drawing.SystemColors.WindowFrame;
             this.mtb_nasc.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.mtb_nasc.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mtb_nasc.ForeColor = System.Drawing.SystemColors.Control;
             this.mtb_nasc.Location = new System.Drawing.Point(148, 239);
             this.mtb_nasc.Mask = "00/00/0000";
             this.mtb_nasc.Name = "mtb_nasc";
@@ -221,6 +230,7 @@
             this.mtb_telefone.BackColor = System.Drawing.SystemColors.WindowFrame;
             this.mtb_telefone.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.mtb_telefone.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mtb_telefone.ForeColor = System.Drawing.SystemColors.Control;
             this.mtb_telefone.Location = new System.Drawing.Point(278, 238);
             this.mtb_telefone.Mask = "00000-9999";
             this.mtb_telefone.Name = "mtb_telefone";
@@ -232,6 +242,7 @@
             this.tb_rg.BackColor = System.Drawing.SystemColors.WindowFrame;
             this.tb_rg.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tb_rg.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_rg.ForeColor = System.Drawing.SystemColors.Control;
             this.tb_rg.Location = new System.Drawing.Point(147, 53);
             this.tb_rg.Name = "tb_rg";
             this.tb_rg.Size = new System.Drawing.Size(100, 19);
@@ -243,6 +254,7 @@
             this.tb_salario.BackColor = System.Drawing.SystemColors.WindowFrame;
             this.tb_salario.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tb_salario.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_salario.ForeColor = System.Drawing.SystemColors.Control;
             this.tb_salario.Location = new System.Drawing.Point(278, 361);
             this.tb_salario.Name = "tb_salario";
             this.tb_salario.Size = new System.Drawing.Size(100, 19);

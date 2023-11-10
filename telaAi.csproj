@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Entidades\Funcionario.cs" />
+    <Compile Include="Entidades\Validacoes.cs" />
     <Compile Include="Telas\Form1.cs">
       <SubType>Form</SubType>
     </Compile>

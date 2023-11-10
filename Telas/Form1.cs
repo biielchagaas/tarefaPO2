@@ -55,10 +55,21 @@ namespace telaAi
 
             Funcionario funcionario = new Funcionario(id, nome, email, telefone, cpf, estadoCivil, rg, dataNasc, endereco, cidade, estado, funcao, salario);
 
-            if (funcionario.ValidarCPF(mtb_cpf.Text) && funcionario.ValidarEmail(tb_email.Text))
+            bool cpfValido = Validacoes.ValidarCPF(mtb_cpf.Text);
+            bool emailValido = Validacoes.ValidarEmail(tb_email.Text);
+
+            if (tb_id.Text == "" || tb_nome.Text == "" || tb_email.Text == "" || mtb_telefone.Text == "" || mtb_cpf.Text == "" || tb_estCiv.Text == "" || tb_rg.Text == "" || mtb_nasc.Text == "" || tb_endereco.Text == "" || tb_cidade.Text == "" || tb_estado.Text == "" || tb_funcao.Text == "" || tb_salario.Text == "")
             {
-                funcionarios.Add(funcionario);
-                MessageBox.Show("Salvo");
+                MessageBox.Show("Por favor, preencha todos os campos!!");
+            }
+            else
+            {
+                if (cpfValido && emailValido)
+                {
+                    funcionarios.Add(funcionario);
+                    MessageBox.Show("Salvo");
+                    this.Dispose();
+                }
             }
         }
 
@@ -156,6 +167,5 @@ namespace telaAi
                 e.Handled = true;
             }
         }
-        
     }
 }
