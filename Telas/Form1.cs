@@ -8,6 +8,7 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using telaAi.Configuracao;
 using telaAi.Entidades;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
@@ -18,7 +19,6 @@ namespace telaAi
         public Form1()
         { 
             InitializeComponent();
-            //List<Funcionario> funcionarios = new List<Funcionario>();
             btn_Salvar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             btn_Salvar.FlatAppearance.BorderSize = 0;
             btn_Salvar.FlatAppearance.MouseDownBackColor = Color.Transparent;
@@ -68,6 +68,8 @@ namespace telaAi
                 {
                     funcionarios.Add(funcionario);
                     MessageBox.Show("Salvo");
+                    Inserir();
+                    Consultar();
                     this.Dispose();
                 }
                 if (!cpfValido)
@@ -173,6 +175,85 @@ namespace telaAi
             if (!char.IsLetter(e.KeyChar) && e.KeyChar != (char)Keys.Back && e.KeyChar != (char)Keys.Space)
             {
                 e.Handled = true;
+            }
+        }
+        void Inserir()
+        {
+            string id = tb_id.Text;
+            string nome = tb_nome.Text;
+            string email = tb_email.Text;
+            string telefone = mtb_telefone.Text;
+            string cpf = mtb_cpf.Text;
+            string estadoCivil = tb_estCiv.Text;
+            string rg = tb_rg.Text;
+            DateTime dataNasc = DateTime.Parse(mtb_nasc.Text);
+            string endereco = tb_endereco.Text;
+            string cidade = tb_cidade.Text;
+            string estado = tb_estado.Text;
+            string funcao = tb_funcao.Text;
+            double salario = Double.Parse(tb_salario.Text);
+
+            cpf = cpf.Replace(".", "");
+            cpf = cpf.Replace("-", "");
+
+            telefone = telefone.Replace("-", "");
+            telefone = telefone.Replace(".", "");
+
+            try
+            {
+                Conexao conexao = new Conexao();
+
+                var comando = conexao.Comando("INSERT INTO Funcionario (id_fun, nome_fun, dataNasc_fun, cpf_fun, rg_fun, telefone_fun, email_fun, endereco_fun," +
+                    " estado_fun, cidade_fun, estado_civil_fun, funcao_fun, salario-fun)" +
+                    " VALUES (@nome, @dataNasc, @cpf, @rg, @telefone, @email, @endereco, @estado, @cidade, @estadoCivil, @funcao, @salario);");
+
+                comando.Parameters.AddWithValue("@nome", nome);
+                comando.Parameters.AddWithValue("@dataNasc", dataNasc);
+                comando.Parameters.AddWithValue("@cpf", cpf);
+                comando.Parameters.AddWithValue("@rg", rg);
+                comando.Parameters.AddWithValue("@telefone", telefone);
+                comando.Parameters.AddWithValue("email", email);
+                comando.Parameters.AddWithValue("@endereco", endereco);
+                comando.Parameters.AddWithValue("@estado", estado);
+                comando.Parameters.AddWithValue("@cidade", cidade);
+                comando.Parameters.AddWithValue("@estadoCivil", estadoCivil);
+                comando.Parameters.AddWithValue("@funcao", funcao);
+                comando.Parameters.AddWithValue("@salario", salario);
+
+                var resultado = comando.ExecuteNonQuery();
+
+                if (resultado > 0)
+                {
+                    MessageBox.Show("Funcionário cadastrado!!!");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+        void Consultar()
+        {
+            try
+            {
+                var conexao = new Conexao();
+
+                var comando = conexao.Comando("SELECT * FROM Funcionario");
+
+                var leitor = comando.ExecuteReader();
+
+                string resultado = null;
+
+                while (leitor.Read())
+                {
+                    resultado += "\n" + leitor.GetString("nome_fun");
+                }
+
+                MessageBox.Show(resultado);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
             }
         }
     }

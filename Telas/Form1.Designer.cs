@@ -60,7 +60,7 @@
             this.tb_id.ForeColor = System.Drawing.SystemColors.Control;
             this.tb_id.Location = new System.Drawing.Point(18, 52);
             this.tb_id.Name = "tb_id";
-            this.tb_id.Size = new System.Drawing.Size(100, 19);
+            this.tb_id.Size = new System.Drawing.Size(97, 19);
             this.tb_id.TabIndex = 0;
             this.tb_id.Text = "\r\n\r\n";
             this.tb_id.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tb_id_KeyPress);
@@ -266,7 +266,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(726, 427);
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(723, 427);
             this.ControlBox = false;
             this.Controls.Add(this.tb_salario);
             this.Controls.Add(this.mtb_telefone);
@@ -286,9 +287,10 @@
             this.Controls.Add(this.tb_estCiv);
             this.Controls.Add(this.tb_rg);
             this.Controls.Add(this.tb_id);
+            this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
