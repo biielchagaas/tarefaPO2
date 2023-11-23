@@ -204,11 +204,12 @@ namespace telaAi
                 Conexao conexao = new Conexao();
 
                 var comando = conexao.Comando("INSERT INTO Funcionario (id_fun, nome_fun, dataNasc_fun, cpf_fun, rg_fun, telefone_fun, email_fun, endereco_fun," +
-                    " estado_fun, cidade_fun, estado_civil_fun, funcao_fun, salario-fun)" +
-                    " VALUES (@nome, @dataNasc, @cpf, @rg, @telefone, @email, @endereco, @estado, @cidade, @estadoCivil, @funcao, @salario);");
+                    " estado_fun, cidade_fun, estado_civil_fun, funcao_fun, salario_fun)" +
+                    " VALUES (@id ,@nome, @dataNasc, @cpf, @rg, @telefone, @email, @endereco, @estado, @cidade, @estadoCivil, @funcao, @salario);");
 
+                comando.Parameters.AddWithValue("@id", id);
                 comando.Parameters.AddWithValue("@nome", nome);
-                comando.Parameters.AddWithValue("@dataNasc", dataNasc);
+                comando.Parameters.AddWithValue("@dataNasc", dataNasc.Date);
                 comando.Parameters.AddWithValue("@cpf", cpf);
                 comando.Parameters.AddWithValue("@rg", rg);
                 comando.Parameters.AddWithValue("@telefone", telefone);

@@ -219,7 +219,7 @@
             this.mtb_nasc.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mtb_nasc.ForeColor = System.Drawing.SystemColors.Control;
             this.mtb_nasc.Location = new System.Drawing.Point(148, 239);
-            this.mtb_nasc.Mask = "00/00/0000";
+            this.mtb_nasc.Mask = "0000-00-00";
             this.mtb_nasc.Name = "mtb_nasc";
             this.mtb_nasc.Size = new System.Drawing.Size(100, 19);
             this.mtb_nasc.TabIndex = 19;
